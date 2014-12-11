@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -50,10 +49,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Fia-CU-6Gf" secondAttribute="bottom" constant="47" id="Bej-EC-LNU"/>
+                            <constraint firstItem="Ace-r4-YP2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="L05-qH-Kh0"/>
                             <constraint firstAttribute="centerX" secondItem="Ace-r4-YP2" secondAttribute="centerX" id="Yb3-qi-un6"/>
                             <constraint firstAttribute="trailing" secondItem="Ace-r4-YP2" secondAttribute="trailing" id="eu6-K4-eiH"/>
                             <constraint firstAttribute="centerX" secondItem="Fia-CU-6Gf" secondAttribute="centerX" id="kIy-fL-g80"/>
-                            <constraint firstItem="Ace-r4-YP2" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="o7B-XD-8h5"/>
                             <constraint firstItem="Ace-r4-YP2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="yDL-aW-cFM"/>
                         </constraints>
                     </view>
@@ -120,7 +119,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qVn-sQ-s0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Hs7-aG-ux5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="994" y="653.5"/>
+            <point key="canvasLocation" x="1166" y="654"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fr3-z7-3UC">
@@ -143,13 +142,21 @@
                                     <segue destination="2bX-k0-Ane" kind="embed" id="eLl-CX-a7V"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the second page!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hae-4i-N7b">
+                                <rect key="frame" x="207" y="273" width="187" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="hae-4i-N7b" secondAttribute="centerX" constant="-0.5" id="9ZG-TT-RVc"/>
+                            <constraint firstItem="KBV-su-Nak" firstAttribute="top" secondItem="fF1-oE-RKd" secondAttribute="top" id="Lql-Lx-lFP"/>
                             <constraint firstAttribute="centerX" secondItem="KBV-su-Nak" secondAttribute="centerX" id="bAi-y8-9tI"/>
                             <constraint firstAttribute="trailing" secondItem="KBV-su-Nak" secondAttribute="trailing" id="c4I-XA-SAU"/>
+                            <constraint firstAttribute="centerY" secondItem="hae-4i-N7b" secondAttribute="centerY" constant="16.5" id="fpi-jF-nvt"/>
                             <constraint firstItem="KBV-su-Nak" firstAttribute="leading" secondItem="fF1-oE-RKd" secondAttribute="leading" id="hDf-K0-uqf"/>
-                            <constraint firstItem="KBV-su-Nak" firstAttribute="top" secondItem="fF1-oE-RKd" secondAttribute="topMargin" id="zG7-gp-URs"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -163,6 +170,6 @@
         <image name="back" width="65" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Y8-Ro-69C"/>
+        <segue reference="eLl-CX-a7V"/>
     </inferredMetricsTieBreakers>
 </document>
